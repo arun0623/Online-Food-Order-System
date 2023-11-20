@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foodie Order</title>
+        <link rel="stylesheet" href="Foodie index.css">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            backdrop-filter: blur(7px);
+        }
+        
+        body {
+            background-image: url(https://img.freepik.com/premium-photo/table-full-food-including-rice-rice-vegetables_662214-45244.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=ais);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(8px);
+            height: 53rem;
+        }
+        
+        body img {
+            margin-left: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 6px 8px black;
+        }
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 3px 5px black;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 45px;
+            font-size: xx-large;
+            margin-bottom: 30px;
+            text-decoration: darkblue;
+        }
+        
+        h3 {
+            margin-top: 20px;
+        }
+        
+        h5 {
+            text-align: center;
+            font-size: larger;
+        }
+        
+        .nav {
+            display: grid;
+            place-items: center;
+            margin-left: 30%;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+        }
+        
+        .nav ul a {
+            border: 2px solid black;
+            box-shadow: 2px 2px 3px black;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 5px 20px;
+            margin-right: 17px;
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        .nav ul a:hover {
+            background-color: rgb(114, 177, 19);
+        }
+        
+        ul li {
+            display: inline-block;
+        
+        }
+        
+        .home p {
+            margin-top: 90px;
+            text-align: center;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 70px;
+            color: white;
+            text-shadow: 2px 3px 5px black;
+        
+        }
+        
+        h6 {
+            margin-top: 70px;
+            margin-bottom: 20px;
+            text-shadow: 3px 5px 7px black;
+            float: right;
+            margin-right: 50px;
+            line-height: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: antiquewhite;
+            font-size: larger;
+        }
+        
+        .dropbtn {
+            background-color: rgb(102, 99, 99);
+            margin-top: 10px;
+            margin-left: 10px;
+            color: white;
+            padding: 10px 50px;
+            padding-right: 100px;
+            font-size: 12px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 3px black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            font-size: x-large;
+            float: right;
+            margin-top: 15px;
+            margin-right: 70px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown button {
+            font-size: large;
+        }
+        
+        .dropdown-content {
+            background-color: rgb(110, 177, 11);
+            margin-left: 35px;
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 20px 30px;
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        
+        .dropdown-content a {
+            font-size: large;
+        }
+        
+        .dropdown-content a li {
+            float: right;
+            font-size: large;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    <body>
+        <h1>FoodieeZ World</h1>
+        <div class="nav">
+            <ul>
+                 <li><a href="About us.html">About</a></li>
+                 <li><a href="Spaciality.html">Spaciality</a></li>
+                 <li><a href="Service.html">Services</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+                 <li> <a href="Feedback.html">Feedback</a></li>
+                 <li><a href="Login.html">Logout</a></li>
+
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Food Category</button>
+            <div class="dropdown-content">
+                <a href="Morning breakfast.html">Morning Breakfast</a>
+                <a href="Afternoon Lunch.html">Afternoon Lunch</a>
+                <a href="Night Dinner.html">Night Dinner</a>
+                <a href="Chinese Food.html">Chinse Dishes</a>
+            </div>
+        </div>
+
+        <img src="https://img.freepik.com/premium-vector/moustached-chef-design_602006-4096.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=ais" width="15%">
+        <!--Home-->
+        <div class="home">
+            <p>ENJOY YOUR HEALTHY<br />
+                DELIOUS FOODIEZ</p>
+            <!--End-->
+            <div class="my">
+                <h6>This Website to developed by M.Aravindharaj<br>
+                (Bsc Computerscience,Full stack developer)</h6>
+            </div>
+
+        </p>
+    </body>
+</html>

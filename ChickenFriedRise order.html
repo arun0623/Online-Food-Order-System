@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Food Order</title>
+        <style>
+            body{
+                background-image: url(https://img.freepik.com/free-photo/view-delicious-steak-dish_23-2150777653.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                backdrop-filter: blur(5px);
+                height: 60rem;
+            }
+            h3{
+                font-size: x-large;
+                color: white;
+                text-shadow: 2px 4px 7px black;
+            }
+            .form{
+                margin-bottom: 5%;
+                border: 1px solid black;
+                box-shadow: 5px 6px 9px black;
+                border-radius: 20px;
+                width: 30%;
+                height: 75%;
+                line-height: 50px;
+                margin-left: 37%;
+            }
+            .form label{
+                font-size: x-large;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 4px 7px black;
+            }
+            .form label{
+                font-size: x-large;
+                font-weight: bold;
+            }
+            .form ul li{
+                list-style: none;
+            }
+            .form input{
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+            .form button{
+                margin-top: 30px;
+                margin-left: 40px;
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+            .form button:hover{
+                background-color: green;
+            }
+            .order{
+                padding: 2px 5px;
+                border: 2px solid black;
+                border-radius: 10px;
+                width: 25%;
+                height: 10%;
+                margin-left: 80px;
+            }
+            .order:hover{
+                background-color: green;
+            }
+            .order a{
+                text-decoration: none;
+                font-size: large;
+                color: white;
+            }
+            .address{
+                margin-bottom: 30px;
+            }
+            .home{
+                margin-left: 85%;
+                background-color: rgb(49, 153, 49);
+                border: 1px solid black;
+                padding: 10px 20px;
+                width: 7%;
+                border-radius: 10px;
+                box-shadow: 3px 6px 9px black;
+    
+            }
+            .home:hover{
+                background-color:rgb(2, 110, 2);
+            }
+            .home a{
+                margin-left: 20px;
+                text-decoration: none;
+                color: white;
+                text-shadow: 2px 2px 3px black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FoodieeZ World</h1>
+        <div class="home">
+            <a href="Night Dinner.html">Previous</a>
+        </div>
+        <div class="form">
+            <ul>
+                <li>
+                    <label for="idli">Chicken Fried Rise:</label>
+                </li>
+                <input
+                    type="text" id="Chicken Fried Rise" value="Chicken Fried Rise" readonly>
+                <li><label for="quantity">Quantity:</label></li>
+                <input
+                    type="number" id="quantity" placeholder="Enter quantity"
+                    min="1" value="1">
+                <li><button id="add-button">Add to Order</li>
+                </button>
+                <h3>Order Summary:</h3>
+                <ul id="order-summary"></ul>
+                <p>Total Amount: ₹
+                    <span id="total-amount">120</span>
+                </p>
+                <div class="address">
+                    <label for="address">Current Location</label>
+                    <input type="text" id="address" id="address"
+                        placeholder="Current Loaction">
+                </div>
+                <div class="order">
+                    <a href="Paynow.html">Place Order</a>
+                </div>
+            </ul>
+        </div>
+        <script>
+        // JavaScript to handle the order
+        const addButton = document.getElementById('add-button');
+        const orderSummary = document.getElementById('order-summary');
+        const totalAmount = document.getElementById('total-amount');
+        const items = [];
+
+        addButton.addEventListener('click', () => {
+            const quantity = parseInt(document.getElementById('quantity').value);
+
+            if (!isNaN(quantity) && quantity >= 1) {
+                items.push({ idli: "ChickenFriedRise", quantity, price: 120 });
+                updateOrderSummary();
+            }
+        });
+
+        function updateOrderSummary() {
+            orderSummary.innerHTML = '';
+            let totalPrice = 0;
+            
+            for (const item of items) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.quantity} x ${item.meal} - ₹${item.quantity * item.price}`;
+                orderSummary.appendChild(listItem);
+                totalPrice += item.quantity * item.price;
+            }
+
+            totalAmount.textContent = totalPrice.toFixed(2);
+        }
+        </script>
+    </body>
+</html>

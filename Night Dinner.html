@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night Dinner Order</title>
+    </head>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/freshly-made-meal-rustic-crockery-bowl-generated-by-ai_188544-29194.jpg);
+            backdrop-filter: blur(4px);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 2px 3px 6px black;
+        }
+        h2{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 2px 3px 6px black;
+        }
+        h3{
+            margin-left: 30%;
+            font-size: x-large;
+            color: white;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 2px 3px 7px black;
+        }
+        body img{
+            border-radius: 10px;
+            box-shadow: 5px 6px 8px black;
+            margin-top: 20px;
+        }
+        .Dinner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        
+        .item img {
+            width: 90%;
+            height: 220px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+        
+        .item img:hover {
+            transform: scale(1.04);
+        }
+        
+        .Dinner a {
+            margin-left: 45%;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: white;
+            font-size: larger;
+        }
+        
+        .Dinner a:hover {
+            background-color: green;
+        }
+        .home{
+            margin-left: 85%;
+            background-color: rgb(49, 153, 49);
+            border: 1px solid black;
+            padding: 10px 20px;
+            width: 7%;
+            border-radius: 10px;
+            box-shadow: 3px 6px 9px black;
+
+        }
+        .home:hover{
+            background-color:rgb(2, 110, 2);
+        }
+        .home a{
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+
+</style>
+    <body>
+        <h1>FoodieeZ World</h1>
+        <div class="home">
+            <a href="Foodie index.html">Back to home</a>
+        </div>
+        <h2>Night Dinner</h2>
+
+        <section class="Dinner">
+            <div class="item">
+                <img src="https://img.freepik.com/premium-photo/tasty-masala-dosa-with-sauces-isolated-white-background_787273-4724.jpg">
+                <div class="order idliy">
+                    <h3>Butter Dhosai</h3>
+                    <h3>Price:60</h3>
+                    <a href="ButterDhosai order.html">Order now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.freepik.com/free-photo/photo-indian-bread-isolated-white-background_125540-4001.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=ais">
+                <div class="order idliy">
+                    <h3>Chapathy</h3>
+                    <h3>Price:25</h3>
+                    <a href="Chapathy order.html">Order now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=ais">
+                <div class="order idliy">
+                    <h3>Chicken Fried Rice</h3>
+                    <h3>Price:120</h3>
+                    <a href="ChickenFriedRise order.html">Order now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.freepik.com/free-photo/craft-beef-burger-french-fries-wooden-table-melting-chesses-isolated-black-background-ai-generative_157027-1745.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=sph">
+                <div class="order idliy">
+                    <h3>Burgar</h3>
+                    <h3>Price:70</h3>
+                    <a href="Burgar order.html">Order now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.freepik.com/free-photo/delicious-pizza-indoors_23-2150873874.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=sph">
+                <div class="order idliy">
+                    <h3>Pizza</h3>
+                    <h3>Price:150</h3>
+                    <a href="Pizza order.html">Order now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.freepik.com/free-photo/fresh-sandwich-cutting-board-with-healthy-tomatoes-generative-ai_188544-8108.jpg?size=626&ext=jpg&uid=R121442071&ga=GA1.1.137678217.1695758906&semt=ais">
+                <div class="order idliy">
+                    <h3>Shawarama</h3>
+                    <h3>Price:90</h3>
+                    <a href="Shawarama order.html">Order now</a>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
